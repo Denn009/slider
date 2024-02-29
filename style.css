@@ -1,0 +1,606 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif, "Roboto Slab";
+  font-size: 16px;
+  color: #2E2E2E;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  width: calc(100% - 150px);
+  margin: 0 auto;
+}
+
+.title-h2 {
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.header {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8980392157);
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #c8c8c8;
+  z-index: 99;
+}
+
+.container-header {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 15%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-nav li {
+  margin-right: 60px;
+}
+.header-nav li a:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.margin-top {
+  height: 100px;
+}
+
+.hero {
+  height: 550px;
+  width: 100%;
+  background-image: url("img/hero.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container-hero {
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.hero-content {
+  max-width: 670px;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.hero-subtitle {
+  margin-bottom: 40px;
+  color: #FFF;
+  opacity: 0.7;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.about {
+  margin-top: 150px;
+}
+
+.container-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-description {
+  font-size: 24px;
+  color: #707070;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.about-images {
+  position: relative;
+}
+
+.about-img-1 {
+  position: relative;
+  top: -21px;
+  left: 100px;
+  z-index: 1;
+  box-shadow: 20px 15px 48px 0 rgba(0, 0, 0, 0.14);
+}
+
+.about-img-2 {
+  position: absolute;
+  top: 75px;
+  left: -74px;
+  box-shadow: -19px 18px 48px 0 rgba(0, 0, 0, 0.14);
+}
+
+.strategy {
+  margin-top: 225px;
+}
+
+.strategy-cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+
+.strategy-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.strategy-item:first-child {
+  grid-row: span 2;
+}
+.strategy-item:hover .strategy-img {
+  scale: 1.2;
+}
+
+.strategy-img {
+  width: 100%;
+  height: 100%;
+  transition: scale 0.6s ease-in-out;
+}
+
+.strategy-caption {
+  position: absolute;
+  color: #FFF;
+  bottom: 20px;
+  left: 28px;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.benefits {
+  position: relative;
+  margin-top: 150px;
+  padding-bottom: 75px;
+  overflow: hidden;
+}
+.benefits::before {
+  content: "";
+  position: absolute;
+  top: 63px;
+  left: -37px;
+  background-image: url("img/benefits-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 110%;
+  height: 1106px;
+  z-index: -1;
+}
+
+.benefits-cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 60px;
+}
+
+.benefits-number {
+  margin-right: 55px;
+}
+
+.benefits-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 640px;
+  height: 170px;
+  border: 1px solid #aaa;
+  padding: 10px 20px;
+}
+.benefits-item:nth-child(1) {
+  grid-column: 1/span 1; /* Элемент 1 располагается в первом столбце */
+  grid-row: 1/span 1; /* Элемент 1 располагается в первой строке */
+}
+.benefits-item:nth-child(2) {
+  grid-column: 2/span 1; /* Элемент 2 располагается во втором столбце */
+  grid-row: 2/span 1; /* Элемент 2 располагается во второй строке */
+}
+.benefits-item:nth-child(3) {
+  grid-column: 1/span 1; /* Элемент 3 располагается в первом столбце */
+  grid-row: 3/span 1; /* Элемент 3 располагается во второй строке */
+}
+
+.benefits-description {
+  font-size: 24px;
+  color: #707070;
+  line-height: 150%;
+}
+
+.benefits-number {
+  width: 100px;
+}
+
+.office {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #000;
+}
+
+.container-office {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.office-text {
+  max-width: 400px;
+}
+
+.office-title {
+  color: #fff;
+}
+
+.office-description {
+  color: #fff;
+  font-weight: 300;
+  font-size: 24px;
+  opacity: 0.9;
+  line-height: 120%;
+}
+
+.office-slider {
+  position: relative;
+  width: 65%;
+}
+.office-slider img {
+  width: 100%;
+}
+
+.arrow-slider {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.38);
+  border: 0.25px solid #ddd;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.arrow-prev {
+  bottom: 20px;
+  left: 20px;
+}
+.arrow-prev:hover {
+  left: 18px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.arrow-next {
+  bottom: 20px;
+  right: 20px;
+}
+.arrow-next:hover {
+  right: 18px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.vacancy {
+  margin-top: 75px;
+  margin-bottom: 150px;
+}
+
+.title-vacancy {
+  margin-bottom: 150px;
+}
+
+.vacancy-cards {
+  display: grid;
+}
+
+.vacancy-item {
+  position: relative;
+  padding-right: 30px;
+  padding-left: 30px;
+  justify-self: end;
+  width: 480px;
+  height: 800px;
+  box-shadow: 4px 4px 54px 0 rgba(0, 0, 0, 0.06);
+  bottom: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.vacancy-item:hover {
+  bottom: 5px;
+}
+.vacancy-item-l {
+  margin-top: -250px;
+  justify-self: start;
+}
+
+.vacancy-img {
+  box-shadow: 14px 13px 31px 0 rgba(0, 0, 0, 0.16);
+  position: absolute;
+  top: -50px;
+  right: 100px;
+}
+.vacancy-img-1 {
+  left: 100px;
+}
+
+.vacancy-caption {
+  margin-top: 440px;
+  margin-bottom: 35px;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.vacancy-description {
+  font-weight: 300;
+  font-size: 22px;
+  color: #575757;
+  max-width: 360px;
+  line-height: 120%;
+}
+
+.vacancy-price {
+  position: absolute;
+  bottom: 35px;
+  right: 25px;
+  font-weight: 400;
+  font-size: 48px;
+  color: #87d454;
+}
+.vacancy-price span {
+  font-size: 64px;
+}
+.vacancy-price span span {
+  font-size: 60px;
+}
+
+.vacancy-button {
+  margin: 50px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: unset;
+  cursor: pointer;
+  width: 250px;
+  height: 60px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #006738;
+  transition: all 0.2s ease;
+}
+.vacancy-button:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  position: relative;
+  height: 275px;
+  box-shadow: -3px -2px 89px 0 rgba(0, 0, 0, 0.06);
+}
+
+.container-footer {
+  display: flex;
+}
+
+.footer-info {
+  padding-top: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #545454;
+}
+.footer-info p {
+  padding-top: 10px;
+}
+.footer-info-2 {
+  margin-left: 70px;
+}
+
+.footer-caption {
+  font-size: 16px;
+  color: #000;
+}
+
+.footer-auth {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  font-size: 12px;
+  color: #545454;
+}
+
+@media screen and (max-width: 1600px) {
+  .container-about {
+    padding-right: 80px;
+  }
+  .benefits-item {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .header-nav li {
+    margin-right: 30px;
+  }
+  .header-logo {
+    margin-right: 10%;
+  }
+  .about-description {
+    font-size: 20px;
+    padding-right: 80px;
+  }
+  .benefits-item:nth-child(2) {
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+  }
+  .office-description {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  .vacancy-item-l {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .header-nav {
+    display: none;
+  }
+  .container-about {
+    flex-direction: column;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .about-description {
+    padding-right: 0;
+  }
+  .about-images {
+    margin-top: 50px;
+  }
+  .container-office {
+    flex-direction: column;
+  }
+  .office-text {
+    max-width: unset;
+    width: 100%;
+  }
+  .office-slider {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about {
+    margin-top: 75px;
+  }
+  .container-about {
+    padding-right: 0;
+  }
+  .about-img-1 {
+    width: 350px;
+  }
+  .about-img-2 {
+    width: 400px;
+  }
+  .strategy {
+    margin-top: 160px;
+  }
+  .benefits {
+    margin-top: 75px;
+  }
+  .benefits-cards {
+    grid-template-columns: auto;
+  }
+  .benefits-item {
+    width: 100%;
+  }
+  .vacancy {
+    margin-bottom: 75px;
+  }
+  .title-vacancy {
+    margin-bottom: 75px;
+  }
+  .vacancy-item {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .vacancy-img {
+    position: static;
+    top: unset;
+    right: unset;
+    width: 100%;
+  }
+  .vacancy-caption {
+    padding-left: 30px;
+    margin-top: 50px;
+  }
+  .vacancy-description {
+    padding-left: 30px;
+    max-width: unset;
+  }
+  .vacancy-cards {
+    justify-content: center;
+  }
+  .strategy-caption {
+    left: 15px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+  .hero-title {
+    font-size: 30px;
+  }
+  .about-img-1 {
+    width: 300px;
+    top: 25px;
+    left: 50px;
+  }
+  .about-img-2 {
+    width: 350px;
+    top: 80px;
+    left: -70px;
+  }
+  .strategy-cards {
+    grid-template-columns: auto;
+  }
+  .strategy-item:first-child {
+    grid-row: unset;
+  }
+  .strategy-item {
+    height: 200px;
+  }
+  .strategy-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .vacancy-item {
+    width: 100%;
+    height: 700px;
+  }
+  .vacancy-img {
+    height: 251px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .vacancy-caption {
+    padding-right: 30px;
+  }
+  .vacancy-description {
+    padding-right: 30px;
+  }
+  .vacancy-price {
+    font-size: 40px;
+  }
+  .vacancy-price span {
+    font-size: 50px;
+  }
+  .vacancy-price span span {
+    font-size: inherit;
+  }
+}
+@media screen and (max-width: 475px) {
+  .benefits-description {
+    font-size: 18px;
+  }
+  .about-img-1 {
+    left: 100px;
+  }
+  .about-img-2 {
+    left: -133px;
+  }
+}/*# sourceMappingURL=style.css.map */
